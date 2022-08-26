@@ -205,7 +205,6 @@ PRODUCT_PACKAGES += \
     libhwc2onfbadapter \
     libqdMetaData.system \
     libqdMetaData \
-    libtinyxml \
     libvulkan \
     hwcomposer.sdm710 \
     memtrack.sdm710 \
@@ -437,6 +436,10 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
+
+# TinyXML
+PRODUCT_PACKAGES += \
+    libtinyxml
 
 # USB
 PRODUCT_PACKAGES += \
