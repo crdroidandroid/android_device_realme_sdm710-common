@@ -46,6 +46,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bluetooth.a2dp_offload.disabled=true \
     vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
