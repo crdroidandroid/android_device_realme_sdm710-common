@@ -82,10 +82,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl:32 \
     android.hardware.soundtrigger@2.2-impl:32 \
-    android.hardware.audio.effect@2.0-service \
     android.hardware.audio.effect@5.0-impl:32 \
     android.hardware.audio.service \
-    audio.primary.sdm710 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
@@ -136,9 +134,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
-    BluetoothResCommon \
-    libbthost_if \
-    libldacBT_dec \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
 # Camera
@@ -148,12 +143,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64 \
     libxml2 \
     GcamGo
-
-# CNE
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    services-ext
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -200,8 +189,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.graphics.mapper@2.0-impl-qti-display \
     gralloc.sdm710 \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
     libhwc2on1adapter \
     libhwc2onfbadapter \
     libqdMetaData.system \
@@ -269,9 +256,7 @@ PRODUCT_COPY_FILES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
-    android.hidl.base@1.0_system \
-    android.hidl.manager@1.0 \
-    android.hidl.manager@1.0_system
+    android.hidl.manager@1.0
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -298,11 +283,6 @@ PRODUCT_PACKAGES += \
 # IPC router config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
-
-# IPv6
-PRODUCT_PACKAGES += \
-    ethertypes \
-    libebtc
 
 # IRQ
 PRODUCT_COPY_FILES += \
@@ -455,10 +435,6 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl:64 \
     android.hardware.vibrator@1.0-service
 
-# VNDK-SP
-PRODUCT_PACKAGES += \
-    vndk-sp
-
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
@@ -484,7 +460,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.service@2.1.vendor \
     android.frameworks.displayservice@1.0.vendor \
     android.frameworks.schedulerservice@1.0.vendor \
-    android.frameworks.serservice@1.0.vendor \
     android.frameworks.stats@1.0.vendor \
     android.hardware.atrace@1.0.vendor \
     android.hardware.audio.common@4.0.vendor \
@@ -597,19 +572,12 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0.vendor \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2.vendor \
-    android.hardware.sers@1.0.vendor \
-    android.hardware.sers@2.0.vendor \
-    android.hardware.sers@2.1.vendor \
-    android.hardwareundtrigger@2.1.vendor \
-    android.hardwareundtrigger@2.2.vendor \
-    android.hardwareundtrigger@2.3.vendor \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.0.vendor \
     android.hardware.thermal@1.0.vendor \
     android.hardware.thermal@1.1.vendor \
     android.hardware.thermal@2.0.vendor \
     android.hardware.tv.cec@1.0.vendor \
-    android.hardware.tv.cec@2.0.vendor \
     android.hardware.tv.input@1.0.vendor \
     android.hardware.tv.tuner@1.0.vendor \
     android.hardware.usb.gadget@1.0.vendor \
@@ -641,7 +609,5 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.0.vendor \
     android.system.net.netd@1.1.vendor \
     android.system.wifi.keystore@1.0.vendor \
-    libadf.vendor \
     libstdc++.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    libtinyxml.vendor
